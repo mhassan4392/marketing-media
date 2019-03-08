@@ -1,0 +1,67 @@
+// medium size
+@include mediaMd{
+    // specialities section
+    .specialities-grid{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1.9rem;
+    }
+
+    // technologies section
+    .technology-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    // work section
+    #work{
+        .work-grid{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+
+// small size
+@include mediaSm{
+    // specialities section
+    .specialities-grid{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1.9rem;
+    }
+
+    // technologies section
+    .technology-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    // work section
+    #work{
+        .work-grid{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+}
+
+// large size
+@include mediaLg{
+    // specialities section
+    .specialities-grid{
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 1.9rem;
+    }
+
+    // technologies section
+    .technology-grid{
+        grid-template-columns: repeat(5,1fr);
+    }
+
+    // work section
+    #work{
+        .work-grid{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+}
+
+
+// extra large size
+@include mediaXl{
+}

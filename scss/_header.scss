@@ -1,0 +1,105 @@
+// top header of the document
+#main-header{
+    position: relative;
+    #top-navbar{
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: transparent;
+        &.first-class{
+            padding: 25px 0;
+            @include easeOut();
+        }
+        &.scroll-navbar{
+            padding: 10px 0;
+            background: rgba(24,27,31,1);
+            @include easeOut();
+        }
+        .navbar-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 10px;
+
+            .navbar-btn{
+                color: white;
+                .fa{
+                    font-size: 1.3rem;
+                    cursor: pointer;
+                }
+            }
+
+            .side-navbar{
+                display: none;
+                width: 300px;
+                height: 100%;
+                background: rgba(24,27,31,1);
+                position: fixed;
+                top: 0;
+                right: 0;
+                overflow-y: scroll;
+
+                ul{
+                    padding: 30px 15px;
+                    li{
+                        list-style-type: none;
+                        line-height: 2rem;
+
+                        a{
+                            color: $primary-clr;
+                            font-size: 1rem;
+                            &:hover{
+                                color: $primary-clr;
+                                text-decoration: none;
+                            }
+                        }
+
+                        h4{
+                            a{
+                                color: white;
+                                font-size: 1rem;
+                                &:hover{
+                                    color: white;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #slider{
+        //position: relative;
+        height: 100vh;
+        background: url('../images/ecommerce.jpg')  no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+
+        .slider-overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url('../images/screen.png');
+        }
+    }
+}
+
+.page-container{
+    position: relative;
+}
+
+.navbar-btn-active{
+    padding: 10px 300px 10px 10px;
+    background: rgba(24,27,31,1);
+}
+
+.change-page-width{
+    margin-right: 300px;
+}
+

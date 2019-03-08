@@ -1,0 +1,238 @@
+// specialities section
+#specialities{
+    padding: 110px 0;
+    background: url('../images/homeBrandsBG.jpg') no-repeat center;
+    background-size: cover;
+    header{
+        h1{
+            background: url('../images/bg-title-home.png') no-repeat center;
+            margin-bottom: 70px;
+            color:#000;
+            font-weight: 800;
+        }
+    }
+    .specialities-grid{
+        display: grid;
+        grid-gap: 2.2rem;
+        .specialities-col{
+            .title{
+                padding: 20px 0;
+                color: darken($primary-clr, 10);
+                font-weight: 300;
+            }
+            a{
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+            .desc{
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+
+// Trust Section
+#trust{
+    padding-top: 50px;
+    header{
+        padding-bottom: 30px;
+        h3{
+            color: #000;
+            font-weight: 700;
+        }
+        h2{
+            color: $blue-clr;
+            font-weight: normal;
+            font-size: 3rem;
+        }
+    }
+    .list-header{
+        color: #000;
+        font-weight: 700;
+        padding: 20px 0;
+    }
+    ul{
+        padding-left: 30px;
+        li{
+            list-style-type: none;
+            line-height: 1.8rem;
+            &::before {
+                content: "\25A0";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                color: $blue-clr; /* Change the color */
+                font-weight: bold; /* If you want it to be bold */
+                display: inline-block; /* Needed to add space between the bullet and the text */ 
+                width: 1rem; /* Also needed for space (tweak if needed) */
+              }
+        }
+    }
+}
+
+// Latest Work Section
+#work{
+    padding: 100px 0;
+    background: url('../images/homeRealisationsBG.jpg') no-repeat center;
+    background-size: cover;
+    header{
+        margin-bottom: 50px;
+        h2{
+            background: url('../images/bg-title-home.png') no-repeat center;
+            color:#fff;
+            font-weight: 800;
+        }
+        p{
+            color: lighten($primary-clr, 30);
+        }
+    }
+    .work-grid{
+        display: grid;
+        grid-gap: 1rem;
+        .work-col{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            min-height: 280px;
+            overflow: hidden;
+            cursor: pointer;
+            &:hover{
+                .work-col-overlay{
+                    display: block;
+                    @include easeOut();
+                }
+                .work-grid-inner{
+                    display: none;
+                }
+            }
+            .work-col-overlay{
+                @include easeOut();
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: rgba($blue-clr, 0.5);
+                display: none;
+            }
+            .work-grid-inner{
+                width: 70%;
+                @include easeOut();
+            }
+        }
+
+        .work-col-1{
+            background: url('../images/timberblock_o.jpg') no-repeat center;
+        }
+        .work-col-2{
+            background: url('../images/fromagescda_o.jpg') no-repeat center;
+        }
+        .work-col-3{
+            background: url('../images/proteinco_o.jpg') no-repeat center;
+        }
+        .work-col-4{
+            background: url('../images/tran_o.jpg') no-repeat center;
+        }
+        .work-col-5{
+            background: url('../images/miguelantoine_o.jpg') no-repeat center;
+        }
+        .work-col-6{
+            background: url('../images/winenz_o.jpg') no-repeat center;
+        }
+    }
+}
+
+
+// Ecommerce Section
+#ecommerce{
+    .container{
+        position: relative;
+    }
+    
+    .section-img{
+        position: absolute;
+        z-index: 1;
+    }
+    header{
+        padding-top: 50px;
+        position: absolute;
+        z-index: 5;
+        margin-bottom: -200px;
+        left: 0;
+        z-index: 2222222;
+        h2{
+            color: #000;
+            font-weight: 700;
+            font-size: 2.5rem;
+            span{
+                color: $blue-clr;
+            }
+        }
+        p{
+            font-size: 0.9rem;
+        }
+    }
+}
+
+// Technologies Section
+#technologies{
+    padding: 70px 0;
+    background: url('../images/homeBrandsBG.jpg') no-repeat center;
+    background-size: cover;
+    header{
+        h2{
+            color: #000;
+            font-weight: 700;
+            font-size: 2.2rem;
+            padding-bottom: 30px;
+            background: url('../images/technologyBottomTitleDeco.png') no-repeat bottom;
+        }
+    }
+    .technology-grid{
+        display: grid;
+        .technology-col{
+            cursor: pointer;
+            @include easeOut();
+            padding: 17px 0;
+            &:hover{
+                @include easeOut();
+                background: white;
+            }
+        }
+    }
+}
+
+// Project Section
+#project{
+    padding: 30px 0;
+    background: url('../images/homeWarrantyBG.jpg') no-repeat center;
+    background-size: cover;
+    header{
+        h2{
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+    }
+    .card{
+        background: none;
+        border: none;
+        color: white;
+        h4{
+            padding-top: 20px;
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+        p{
+            padding-top:10px;
+            color: darken($blue-clr, 30);
+            font-size: 0.9rem;
+        }
+        .logo img{
+            width: 85px;
+            height: 85px;
+        }
+    }
+}
