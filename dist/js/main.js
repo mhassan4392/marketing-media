@@ -21,3 +21,6 @@ function scrollFunction() {
         mainNavbar.classList.remove('scroll-navbar');
     }
   }
+
+
+  var s = skrollr.init();
