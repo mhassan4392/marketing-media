@@ -71,7 +71,7 @@ a {
 .container > header,
 .content-wrapper {
 	padding: 30px;
-	width: 80%;
+	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
 }
