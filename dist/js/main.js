@@ -8,7 +8,7 @@ let dropdownList = document.querySelectorAll('.dropdown-list');
 
 // side navbar show function
 navbarBtn.addEventListener('click', function(){
-    sideNavbar.classList.toggle('d-block');
+    sideNavbar.classList.toggle('show');
     navbarBtn.classList.toggle('navbar-btn-active');
     pageContainer.classList.toggle('change-page-width');
 });

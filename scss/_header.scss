@@ -18,10 +18,7 @@
             @include easeOut();
         }
         .navbar-container{
-            // display: flex;
-            // justify-content: space-between;
-            // align-items: center;
-            padding: 10px 10px;
+            
 
             .logo{
                 img{
@@ -37,7 +34,7 @@
                 top: 60px;
                 z-index: 100;
                 color: white;
-                // float: right;
+                @include easeOut();
                 .fa{
                     font-size: 1.7rem;
                     cursor: pointer;
@@ -45,8 +42,9 @@
             }
 
             .side-navbar{
+                @include easeOut();
                 z-index: 101;
-                display: none;
+                margin-right: -250px;
                 width: 250px;
                 height: 100%;
                 background: rgba(24,27,31,1);
@@ -54,6 +52,11 @@
                 top: 0;
                 right: 0;
                 overflow-y: scroll;
+
+                &.show{
+                    margin-right: 0;
+                    @include easeOut();
+                }
 
                 ul{
                     padding: 30px 15px;
@@ -131,15 +134,18 @@
 
 .page-container{
     position: relative;
+    @include easeOut();
 }
 
 .navbar-btn-active{
     padding: 10px 250px 10px 10px;
     background: rgba(24,27,31,1);
+    @include easeOut();
 }
 
 .change-page-width{
     margin-right: 250px;
     margin-left: -250px;
+    @include easeOut();
 }
 
