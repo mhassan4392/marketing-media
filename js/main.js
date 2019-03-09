@@ -4,10 +4,12 @@ let pageContainer = document.querySelector('.page-container');
 let mainNavbar = document.querySelector('#top-navbar');
 let banner = document.querySelector('#homeTopBanner');
 //let header = document.querySelector('#main-header');
+console.log(banner);
 
 navbarBtn.addEventListener('click', function(){
     sideNavbar.classList.toggle('d-block');
     pageContainer.classList.toggle('change-page-width');
+    banner.classList.toggle('change-page-width');
     //header.classList.toggle('change-page-width');
     navbarBtn.classList.toggle('navbar-btn-active');
 });
