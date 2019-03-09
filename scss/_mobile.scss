@@ -17,6 +17,43 @@
             grid-template-columns: repeat(2,1fr);
         }
     }
+
+    // ecommerce section
+    #ecommerce{
+        header{
+            margin-bottom: -20px;
+            position: relative;
+        }
+    }
+
+    // footer section
+    .first-col{
+        display: flex;
+        justify-content: center;
+    }
+    .second-col{
+        display: flex;
+        justify-content: center;
+
+        div{
+            margin-right: 5px;
+        }
+    }
+
+
+    // slider styles
+    #homeTopBanner h2{
+        font-size:18px;
+    }
+    #homeTopBanner h3 {
+        font-size:35px; 
+    }
+    #homeTopBanner p {
+        font-size:15px;
+    }
+    .takeALook { 
+        font-size:15px; 
+    }
 }
 
 // small size
@@ -37,6 +74,41 @@
         .work-grid{
             grid-template-columns: repeat(1,1fr);
         }
+    }
+    // ecommerce section
+    #ecommerce{
+        header{
+            margin-bottom: -20px;
+            position: relative;
+        }
+    }
+
+    // footer section
+    .first-col{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .second-col{
+        flex-direction: column;
+        justify-content: center;
+
+        div{
+            margin-right: 5px;
+        }
+    }
+
+    // slider styles
+    #homeTopBanner h2{
+        font-size:14px;
+    }
+    #homeTopBanner h3 {
+        font-size:25px; 
+    }
+    #homeTopBanner p {
+        font-size:13px;
+    }
+    .takeALook { 
+        font-size:13px; 
     }
 }
 
@@ -59,9 +131,65 @@
             grid-template-columns: repeat(3,1fr);
         }
     }
+
+    // ecommerce section
+    #ecommerce{
+        header{
+            margin-bottom: -100px;
+            position: relative;
+        }
+    }
+
+    // footer section
+    .first-col{
+        justify-content: center;
+    }
+    .second-col{
+        display: flex;
+        justify-content: center;
+
+        div{
+            margin-right: 5px;
+        }
+    }
+
+    // slider styles
+    #homeTopBanner h2{
+        font-size:25px;
+    }
+    #homeTopBanner h3 {
+        font-size:55px; 
+    }
+    #homeTopBanner p {
+        font-size:18px;
+    }
+    .takeALook { 
+        font-size:20px; 
+    }
 }
 
 
 // extra large size
 @include mediaXl{
+    // ecommerce section
+    #ecommerce{
+        header{
+            margin-bottom: -200px;
+            position: relative;
+        }
+    }
+
+
+    // footer section
+    .first-col{
+        justify-content: flex-start;
+    }
+    .second-col{
+        display: flex;
+        justify-content: flex-end;
+
+        div{
+            margin-right: 5px;
+        }
+    }
 }

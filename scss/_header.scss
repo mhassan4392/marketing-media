@@ -18,22 +18,36 @@
             @include easeOut();
         }
         .navbar-container{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 5px 10px;
+            // display: flex;
+            // justify-content: space-between;
+            // align-items: center;
+            padding: 10px 10px;
+
+            .logo{
+                img{
+                    min-width: 200px;
+                    max-width: 251;
+                    height: 100px;
+                }
+            }
 
             .navbar-btn{
+                position: absolute;
+                right: 15px;
+                top: 60px;
+                z-index: 100;
                 color: white;
+                // float: right;
                 .fa{
-                    font-size: 1.3rem;
+                    font-size: 1.7rem;
                     cursor: pointer;
                 }
             }
 
             .side-navbar{
+                z-index: 101;
                 display: none;
-                width: 300px;
+                width: 250px;
                 height: 100%;
                 background: rgba(24,27,31,1);
                 position: fixed;
@@ -67,6 +81,31 @@
                             }
                         }
                     }
+
+                    .dropdown-li{
+                        
+                        a{
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .fa{
+                                color: white;
+                            }
+                        }
+                        .dropdown-list{
+                            padding: 10px 0 10px 15px;
+                            display: none;
+
+                            li{
+                                line-height: 1.7rem;
+                                a{
+                                    color: white;
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -95,11 +134,12 @@
 }
 
 .navbar-btn-active{
-    padding: 10px 300px 10px 10px;
+    padding: 10px 250px 10px 10px;
     background: rgba(24,27,31,1);
 }
 
 .change-page-width{
     margin-right: 300px;
+    overflow-x: visible;
 }
 
