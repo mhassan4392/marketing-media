@@ -10,6 +10,7 @@ let dropdownList = document.querySelectorAll('.dropdown-list');
 navbarBtn.addEventListener('click', function(){
     sideNavbar.classList.toggle('d-block');
     navbarBtn.classList.toggle('navbar-btn-active');
+    pageContainer.classList.toggle('change-page-width');
 });
 
 // side navbar dropdown function

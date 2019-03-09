@@ -113,7 +113,8 @@
         background: #000;
         .footer-logo{
             img{
-                width: 150px;
+                width: 100px;
+                height: 70px;
             }
         }
         small{
@@ -128,9 +129,11 @@
 
         .first-col{
             display: flex;
+            align-items: center;
         }
         .second-col{
             display: flex;
+            align-items: center;
 
             div{
                 margin-right: 5px;

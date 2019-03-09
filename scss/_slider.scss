@@ -191,11 +191,11 @@
     border-bottom: none;
 }
 
-.bg-1 .sl-slide-inner, .bg-1 .sl-content-slice {background: url('../images/ecommerce.jpg') center no-repeat; background-size: cover;}
-.bg-2 .sl-slide-inner, .bg-2 .sl-content-slice {background: url('../images/support.jpg') center no-repeat; background-size: cover;}
-.bg-3 .sl-slide-inner, .bg-3 .sl-content-slice {background: url('../images/seo.jpg') center no-repeat; background-size: cover; }
-.bg-4 .sl-slide-inner, .bg-4 .sl-content-slice {background: url('../images/apps.jpg') center no-repeat; background-size: cover; }
-.bg-5 .sl-slide-inner, .bg-5 .sl-content-slice {background: url('../images/inbound.jpg') center no-repeat; background-size: cover; }
+.bg-1 .sl-slide-inner, .bg-1 .sl-content-slice {background: url('../images/ecommerce.jpg') center no-repeat; background-size: cover; background-attachment: fixed;}
+.bg-2 .sl-slide-inner, .bg-2 .sl-content-slice {background: url('../images/support.jpg') center no-repeat; background-size: cover; background-attachment: fixed;}
+.bg-3 .sl-slide-inner, .bg-3 .sl-content-slice {background: url('../images/seo.jpg') center no-repeat; background-size: cover; background-attachment: fixed;}
+.bg-4 .sl-slide-inner, .bg-4 .sl-content-slice {background: url('../images/apps.jpg') center no-repeat; background-size: cover; background-attachment: fixed;}
+.bg-5 .sl-slide-inner, .bg-5 .sl-content-slice {background: url('../images/inbound.jpg') center no-repeat; background-size: cover; background-attachment: fixed;}
 
 /* Slider Animations */
 .module .IconSlider {
