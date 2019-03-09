@@ -51,6 +51,7 @@
                 color: white;
                 text-decoration: none; }
           #main-header #top-navbar .navbar-container .side-navbar ul .dropdown-li a {
+            cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: space-between; }
@@ -199,16 +200,15 @@
   position: relative; }
 
 #ecommerce .section-img {
-  position: absolute;
   z-index: 1; }
 
 #ecommerce header {
   padding-top: 50px;
+  background: url("../images/gray-bg.jpg");
   position: absolute;
   z-index: 5;
-  margin-bottom: -200px;
   left: 0;
-  z-index: 2; }
+  z-index: 222; }
   #ecommerce header h2 {
     color: #000;
     font-weight: 700;
@@ -346,6 +346,12 @@
   #main-footer #footer-bottom .footer-col-2 small {
     font-size: 0.7rem;
     margin-right: 5px; }
+  #main-footer #footer-bottom .first-col {
+    display: flex; }
+  #main-footer #footer-bottom .second-col {
+    display: flex; }
+    #main-footer #footer-bottom .second-col div {
+      margin-right: 5px; }
 
 @media screen and (max-width: 768px) {
   .specialities-grid {
@@ -354,7 +360,18 @@
   .technology-grid {
     grid-template-columns: repeat(3, 1fr); }
   #work .work-grid {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  #ecommerce header {
+    margin-bottom: -20px;
+    position: relative; }
+  .first-col {
+    display: flex;
+    justify-content: center; }
+  .second-col {
+    display: flex;
+    justify-content: center; }
+    .second-col div {
+      margin-right: 5px; } }
 
 @media screen and (max-width: 500px) {
   .specialities-grid {
@@ -363,7 +380,18 @@
   .technology-grid {
     grid-template-columns: repeat(2, 1fr); }
   #work .work-grid {
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); }
+  #ecommerce header {
+    margin-bottom: -20px;
+    position: relative; }
+  .first-col {
+    flex-direction: column;
+    justify-content: center; }
+  .second-col {
+    flex-direction: column;
+    justify-content: center; }
+    .second-col div {
+      margin-right: 5px; } }
 
 @media screen and (min-width: 769px) {
   .specialities-grid {
@@ -372,7 +400,29 @@
   .technology-grid {
     grid-template-columns: repeat(5, 1fr); }
   #work .work-grid {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  #ecommerce header {
+    margin-bottom: -100px;
+    position: relative; }
+  .first-col {
+    justify-content: center; }
+  .second-col {
+    display: flex;
+    justify-content: center; }
+    .second-col div {
+      margin-right: 5px; } }
+
+@media screen and (min-width: 1171px) {
+  #ecommerce header {
+    margin-bottom: -200px;
+    position: relative; }
+  .first-col {
+    justify-content: flex-start; }
+  .second-col {
+    display: flex;
+    justify-content: flex-end; }
+    .second-col div {
+      margin-right: 5px; } }
 
 * {
   padding: 0;
@@ -408,7 +458,7 @@ body {
 #homeTopBanner {
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: relative;
   z-index: 0;
   background: #181b1f; }
 
@@ -431,7 +481,7 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-  position: absolute; }
+  position: relative; }
 
 .slides-container li img {
   display: none; }

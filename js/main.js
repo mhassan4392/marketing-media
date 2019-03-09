@@ -30,6 +30,9 @@ dropdownLi.forEach(function(el){
     if(e.target.classList.contains('dropdown-li')){
       e.target.children[1].classList.toggle('d-block');
     }
+    if(e.target.classList.contains('fa')){
+      e.target.parentElement.nextSibling.nextSibling.classList.toggle('d-block');
+    }
     
   });
 });
