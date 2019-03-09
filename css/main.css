@@ -25,14 +25,15 @@
         right: 15px;
         top: 60px;
         z-index: 100;
-        color: white; }
+        color: white;
+        transition: all 0.5s ease-out; }
         #main-header #top-navbar .navbar-container .navbar-btn .fa {
           font-size: 1.7rem;
           cursor: pointer; }
       #main-header #top-navbar .navbar-container .side-navbar {
         transition: all 0.5s ease-out;
         z-index: 101;
-        display: none;
+        margin-right: -250px;
         width: 250px;
         height: 100%;
         background: #181b1f;
@@ -40,6 +41,9 @@
         top: 0;
         right: 0;
         overflow-y: scroll; }
+        #main-header #top-navbar .navbar-container .side-navbar.show {
+          margin-right: 0;
+          transition: all 0.5s ease-out; }
         #main-header #top-navbar .navbar-container .side-navbar ul {
           padding: 30px 15px; }
           #main-header #top-navbar .navbar-container .side-navbar ul li {
@@ -91,7 +95,8 @@
 
 .navbar-btn-active {
   padding: 10px 250px 10px 10px;
-  background: #181b1f; }
+  background: #181b1f;
+  transition: all 0.5s ease-out; }
 
 .change-page-width {
   margin-right: 250px;
