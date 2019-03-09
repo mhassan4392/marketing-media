@@ -14,8 +14,15 @@
       padding: 7px 0;
       background: #181b1f;
       transition: all 0.5s ease-out; }
+      #main-header #top-navbar.scroll-navbar .navbar-container .logo img {
+        min-width: 170px;
+        max-width: 171;
+        height: 70px;
+        margin-left: 30px; }
+      #main-header #top-navbar.scroll-navbar .navbar-container .navbar-btn {
+        top: 35px; }
     #main-header #top-navbar .navbar-container {
-      padding: 10px 10px; }
+      padding: 5px 10px; }
       #main-header #top-navbar .navbar-container .logo img {
         min-width: 200px;
         max-width: 201;
