@@ -92,8 +92,8 @@
   background: #181b1f; }
 
 .change-page-width {
-  margin-right: 300px;
-  overflow-x: visible; }
+  margin-right: 250px;
+  margin-left: -250px; }
 
 /* HOME */
 #godown {
@@ -341,23 +341,28 @@
 
 .bg-1 .sl-slide-inner, .bg-1 .sl-content-slice {
   background: url("../images/ecommerce.jpg") center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .bg-2 .sl-slide-inner, .bg-2 .sl-content-slice {
   background: url("../images/support.jpg") center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .bg-3 .sl-slide-inner, .bg-3 .sl-content-slice {
   background: url("../images/seo.jpg") center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .bg-4 .sl-slide-inner, .bg-4 .sl-content-slice {
   background: url("../images/apps.jpg") center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .bg-5 .sl-slide-inner, .bg-5 .sl-content-slice {
   background: url("../images/inbound.jpg") center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 /* Slider Animations */
 .module .IconSlider {
@@ -777,6 +782,32 @@
     #project .card .logo img {
       width: 85px;
       height: 85px; }
+
+#consult {
+  padding: 10px 85px 8px 8px;
+  background: #181b1f;
+  position: fixed;
+  z-index: 2222;
+  bottom: 20px;
+  left: 20px; }
+  #consult div {
+    position: relative; }
+    #consult div img {
+      position: absolute;
+      top: -21px;
+      right: -75px;
+      width: 64px;
+      border-radius: 50%;
+      border: 2px solid #181b1f; }
+    #consult div small a {
+      color: #9a9da0;
+      font-weight: bold;
+      font-size: 0.8rem;
+      transition: all 0.5s ease-out; }
+      #consult div small a:hover {
+        color: white;
+        text-decoration: none;
+        transition: all 0.5s ease-out; }
 
 #main-footer #footer-top {
   background: url("../images/footBG.jpg") no-repeat center;
