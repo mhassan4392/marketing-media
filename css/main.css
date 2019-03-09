@@ -30,6 +30,7 @@
           font-size: 1.7rem;
           cursor: pointer; }
       #main-header #top-navbar .navbar-container .side-navbar {
+        transition: all 0.5s ease-out;
         z-index: 101;
         display: none;
         width: 250px;
@@ -85,7 +86,8 @@
       background: url("../images/screen.png"); }
 
 .page-container {
-  position: relative; }
+  position: relative;
+  transition: all 0.5s ease-out; }
 
 .navbar-btn-active {
   padding: 10px 250px 10px 10px;
@@ -93,7 +95,8 @@
 
 .change-page-width {
   margin-right: 250px;
-  margin-left: -250px; }
+  margin-left: -250px;
+  transition: all 0.5s ease-out; }
 
 /* HOME */
 #godown {
