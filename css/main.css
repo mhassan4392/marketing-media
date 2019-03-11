@@ -15,19 +15,17 @@
       background: #181b1f;
       transition: all 0.5s ease-out; }
       #main-header #top-navbar.scroll-navbar .navbar-container .logo img {
-        min-width: 150px;
-        max-width: 151;
         height: 70px;
-        margin-left: 30px; }
+        margin-left: 30px;
+        transition: all 0.5s ease-out; }
       #main-header #top-navbar.scroll-navbar .navbar-container .navbar-btn {
         top: 35px; }
     #main-header #top-navbar .navbar-container {
       padding: 5px 10px; }
       #main-header #top-navbar .navbar-container .logo img {
-        min-width: 200px;
-        max-width: 201;
-        height: 100px;
-        margin-left: 30px; }
+        height: 120px;
+        margin-left: 30px;
+        transition: all 0.5s ease-out; }
       #main-header #top-navbar .navbar-container .navbar-btn {
         position: absolute;
         right: 15px;
@@ -947,6 +945,9 @@
     font-size: 15px; } }
 
 @media screen and (max-width: 500px) {
+  #main-header #top-navbar .navbar-container .logo img {
+    height: 80px;
+    margin-left: 2px; }
   .specialities-grid {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1.9rem; }
