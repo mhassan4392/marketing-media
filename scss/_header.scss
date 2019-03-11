@@ -16,18 +16,34 @@
             padding: 7px 0;
             background: rgba(24,27,31,1);
             @include easeOut();
-        }
-        .navbar-container{
             
-
-            .logo{
-                img{
-                    min-width: 200px;
-                    max-width: 251;
-                    height: 100px;
+            .navbar-container{
+                .logo{
+                    img{
+                        // min-width: 150px;
+                        // max-width: 151;
+                        height: 70px;
+                        margin-left: 30px;
+                        @include easeOut();
+                    }
+                }
+                .navbar-btn{
+                    top: 35px; 
                 }
             }
-
+            
+        }
+        .navbar-container{
+            padding: 5px 10px;
+            .logo{
+                img{
+                    // min-width: 200px;
+                    // max-width: 201px;
+                    height: 120px;
+                    margin-left: 30px;
+                    @include easeOut();
+                }
+            }
             .navbar-btn{
                 position: absolute;
                 right: 15px;
